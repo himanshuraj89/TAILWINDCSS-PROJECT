@@ -15,16 +15,63 @@ logInButton.addEventListener('click', function(){
     logInForm.classList.remove('hidden');  // Show login
 });
 
-
-let icon = document.getElementById('icon');
+let icon = document.getElementById('icon-close');
+let icon1 = document.getElementById('icon-open');
 let Password = document.getElementById('Password');
-icon.onclick = function(){
-    if(Password.type == "password"){
+icon.addEventListener('click', function() {
+    if (Password.type === "password") {
         Password.type = "text";
-        icon.classList.add('bi bi-eye');
-        icon.classList.remove('bi bi-eye-slash');
-}else{
-    Password.type = "password";
-    icon.classList.remove('fa-eye-slash');
-    icon.classList.add('fa-eye');
-}};
+        icon.classList.add('hidden');
+        icon1.classList.remove('hidden');
+    }
+});
+
+icon1.addEventListener('click', function() {
+    if (Password.type === "text") {
+        Password.type = "password";
+        icon.classList.remove('hidden');
+        icon1.classList.add('hidden');
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let iconClose = document.getElementById('closeeye');
+    let iconOpen = document.getElementById('openeye');
+    let signUpPassword = document.getElementById('sign-password');
+    let confirmPassword = document.getElementById('ConfirmPassword');
+    let passwordMatchMsg = document.createElement("p");
+
+    passwordMatchMsg.style.color = "red";
+    passwordMatchMsg.style.fontSize = "14px";
+    confirmPassword.insertAdjacentElement("afterend", passwordMatchMsg);
+
+    // Toggle password visibility
+    iconClose.addEventListener('click', function () {
+        if (signUpPassword.type === "password") {
+            signUpPassword.type = "text";
+            confirmPassword.type = "text";
+            iconClose.classList.add('hidden');
+            iconOpen.classList.remove('hidden');
+        }
+    });
+
+    iconOpen.addEventListener('click', function () {
+        if (signUpPassword.type === "text") {
+            signUpPassword.type = "password";
+            confirmPassword.type = "password";
+            iconClose.classList.remove('hidden');
+            iconOpen.classList.add('hidden');
+        }
+    });
+
+    // Confirm Password Validation
+    confirmPassword.addEventListener("input", function () {
+        if (signUpPassword.value !== confirmPassword.value) {
+            passwordMatchMsg.textContent = "Passwords do not match!";
+        } else {
+            passwordMatchMsg.textContent = "";
+        }
+    });
+});
+
+
