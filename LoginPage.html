@@ -122,19 +122,25 @@
         </div>
 
     </section>
-    <script src="script.js"></script>
-
-<!-- forgetten passowrd -->
-    <section id="ForgetPasswordSection" class="bg-gray-200 min-h-screen flex items-center justify-center ">
-        <div class="bg-gray-300 flex rounded-2xl max-w-3xl p-5 items-center">
+    
+    <!-- forgotten password -->
+    <section id="ForgetPasswordSection" class="bg-gray-200 min-h-screen flex items-center justify-center hidden">
+        <div class="bg-gray-300 flex rounded-2xl shadow-lg max-w-3xl p-5 items-center">
             <div class="md:w-1/2 px-8 md:px-16">
-                <h1 class="font-semibold">Forget Password</h1>
+                <h2 class="text-3xl font-bold text-[#002D74]">Forgot Password</h2>
+                <p class="text-[#6493ec] font-bold mt-2">Enter your email to reset your password</p>
+                <form action="" class="flex flex-col gap-4 mt-6">
+                    <input type="email" placeholder="Email" class="p-2 border-2 hover:border-blue-400 rounded-xl focus:outline-none" required>
+                    <button type="submit" id="ResetBtn" class="bg-[#002D74] text-white font-bold rounded-xl p-2 hover:scale-105 duration-400">
+                        Reset Password
+                    </button>
+                </form>
             </div>
-            <div>
-                <img src="images/img3.jpg" alt="">
+            <div class="md:block hidden w-1/2">
+                <img src="images/img3.jpg" class="rounded-2xl shadow-2xl" alt="forgot-password-img">
             </div>
         </div>
     </section>
-
+<script src="script.js"></script>
 </body>
 </html>
