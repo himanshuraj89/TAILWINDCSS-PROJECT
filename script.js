@@ -75,11 +75,3 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const forgetPassword = document.getElementById('ForgetPasswordSection');
-const resetBtn = document.getElementById('ResetBtn');
-const forget = document.getElementById('Forget');
-const login = document.getElementById('LogInSection');
-forget.addEventListener('click',function () {
-    forgetPassword.classList.remove('hidden');
-    login.classList.add('hidden');
-});
