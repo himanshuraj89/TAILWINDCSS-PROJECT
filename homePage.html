@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Art Gallery</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="bg-gray-600 text-gray-200 p-4 ">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-2xl font-serif">Aripan</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:underline">Artist</a></li>
+                    <li><a href="#" class="hover:underline">Collection</a></li>
+                    <li><a href="#" class="hover:underline">Exhibitions</a></li>
+                    <li><a href="#" class="hover:underline">Cart</a></li>
+                    <li><a href="#" class="hover:underline">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <div class="relative h-screen w-full flex flex-col items-center justify-center text-white text-center p-4 md:h-[50vh] sm:h-[30vh] bg-cover bg-center bg-[url('images/pexels-atlasworld-1674049.jpg')]">
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+            <!-- Content (Above Overlay) -->
+            <div class="relative z-10">
+                <h1 class="text-2xl font-bold mb-4">Welcome to Aripan</h1>
+                <p class="text-base mb-2">Discover and collect unique digital art pieces.</p>
+                <p class="text-base">Explore our curated collections and exhibitions.</p>
+            </div>
+        </div>
+        <div>
+            <div class="p-20 ">
+            <h1 class="text-5xl text-center ">New arrival</h1>
+            </div>   
+            <div>
+                <ul class="flex justify-center space-x-8 text-xl font-serif">
+                    <li>
+                        <a href="#" class="border-2 border-transparent hover:border-gray-600 px-6">
+                            All
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="border-2 border-transparent hover:border-gray-600 px-6">
+                            Painting
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="border-2 border-transparent hover:border-gray-600 px-6">
+                            Sculpture
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="border-2 border-transparent hover:border-gray-600 px-6">
+                            Traditional Art
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <div class="">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-atlasworld-1674049.jpg" alt="Art 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Art Title 1</h2>
+                        <p class="text-gray-700">Artist Name</p>
+                        <p class="text-gray-500">$100</p>
+                    </div>
+                </div>
+                <!-- Repeat for more art pieces -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-atlasworld-1674049.jpg" alt="Art 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Art Title 2</h2>
+                        <p class="text-gray-700">Artist Name</p>
+                        <p class="text-gray-500">$200</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-atlasworld-1674049.jpg" alt="Art 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Art Title 2</h2>
+                        <p class="text-gray-700">Artist Name</p>
+                        <p class="text-gray-500">$200</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-atlasworld-1674049.jpg" alt="Art 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Art Title 2</h2>
+                        <p class="text-gray-700">Artist Name</p>
+                        <p class="text-gray-500">$200</p>
+                    </div>
+                </div>
+                
+                <!-- Add more art pieces as needed -->
+            </div>
+        </div>
+        </div>
+        <div class="mt-20">
+            <div>
+            <h1 class="text-5xl text-center mb-10">Collections</h1>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/pexels-atlasworld-1674049.jpg" alt="Art 1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                <h2 class="text-xl font-bold">Art Title 1</h2>
+                <p class="text-gray-700">Artist Name</p>
+                <p class="text-gray-500">$100</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/pexels-atlasworld-1674049.jpg" alt="Art 2" class="w-full h-48 object-cover">
+                <div class="p-4">
+                <h2 class="text-xl font-bold">Art Title 2</h2>
+                <p class="text-gray-700">Artist Name</p>
+                <p class="text-gray-500">$200</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/pexels-atlasworld-1674049.jpg" alt="Art 3" class="w-full h-48 object-cover">
+                <div class="p-4">
+                <h2 class="text-xl font-bold">Art Title 3</h2>
+                <p class="text-gray-700">Artist Name</p>
+                <p class="text-gray-500">$300</p>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="images/pexels-atlasworld-1674049.jpg" alt="Art 4" class="w-full h-48 object-cover">
+                <div class="p-4">
+                <h2 class="text-xl font-bold">Art Title 4</h2>
+                <p class="text-gray-700">Artist Name</p>
+                <p class="text-gray-500">$400</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+            <div>
+                <h1 class="text-5xl text-center mt-20 pb-10">Upcoming Exhibitions</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="images/pexels-atlasworld-1674049.jpg" alt="Exhibition 1" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold">Exhibition Title 1</h2>
+                            <p class="text-gray-700">Date: 2023-10-01</p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="images/pexels-atlasworld-1674049.jpg" alt="Exhibition 2" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold">Exhibition Title 2</h2>
+                            <p class="text-gray-700">Date: 2023-10-15</p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="images/pexels-atlasworld-1674049.jpg" alt="Exhibition 3" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold">Exhibition Title 3</h2>
+                            <p class="text-gray-700">Date: 2023-11-01</p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                        <img src="images/pexels-atlasworld-1674049.jpg" alt="Exhibition 4" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h2 class="text-xl font-bold">Exhibition Title 4</h2>
+                            <p class="text-gray-700">Date: 2023-11-15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div>
+            <h1 class="text-5xl text-center mt-20 pb-10">Artists</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-atlasworld-1674049.jpg" alt="Artist 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Artist Name 1</h2>
+                        <p class="text-gray-700">Specialization: Painting</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-atlasworld-1674049.jpg" alt="Artist 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Artist Name 2</h2>
+                        <p class="text-gray-700">Specialization: Sculpture</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-atlasworld-1674049.jpg" alt="Artist 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Artist Name 2</h2>
+                        <p class="text-gray-700">Specialization: Sculpture</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="images/pexels-atlasworld-1674049.jpg" alt="Artist 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h2 class="text-xl font-bold">Artist Name 2</h2>
+                        <p class="text-gray-700">Specialization: Sculpture</p>
+                    </div>
+                </div>
+                <!-- Add more artist cards as needed -->
+            </div>
+        </div>
+      <div>
+            <h1 class="text-5xl text-center mt-20 pb-10">About Us</h1>
+            <div class="max-w-4xl mx-auto p-4 text-center">
+                <p class="text-lg">Aripan is a digital art gallery that showcases unique and innovative artworks from talented artists around the world. Our mission is to provide a platform for artists to share their work and for art lovers to discover and collect exceptional pieces.</p>
+                <p class="mt-4">Join us in celebrating creativity and artistic expression!</p>
+
+        </div>
+
+      </div>  
+    </main>
+    <footer class="bg-gray-600 text-gray-200 p-4 mt-20">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Aripan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
